@@ -25,11 +25,15 @@
 
 /* 모달 내부 박스 */
 .modal-content {
-  
-  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
   padding: 30px;
+  min-width: 380px;
   border-radius: 8px;
-  text-align: center;
+  gap: 0.4rem;
+  background: #fff;
+  
 }
 
 /* 로딩 애니메이션 */
@@ -44,10 +48,6 @@
 }
 /* Chkck 아이콘 */
 
-/* 모달 내부에서 보여줄 메세지 */
-.modal-wait-message{
-    font-size: 1.5rem;
-}
 /* 성공시 상태 */
 .success{
     color: green;
@@ -72,7 +72,7 @@
   justify-content: center;
 }
 .modal-grid > div > p{
-  margin-left: 0.25rem;
+  margin-left: 0.4rem;
   font-size: 1.5rem;
 }
 .modal-grid > div > i{
